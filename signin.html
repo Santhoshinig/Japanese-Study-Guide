@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Nihongo</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="signin.css">
+ 
+</head>
+<body>
+  <img src="header.jpg" alt="" class="nigflag">
+  <div class="container">
+    <div id="signinForm" class="signin-card"> <!-- Add class to the card -->
+      <h2 class="text-center">SignIn(サインイン)</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email(メールアドレス)：</label>
+          <input type="text" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password(パスワード)：</label>
+          <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">サインイン</button>
+      </form>
+      <div class="text-center mt-3">
+        <span>新規ユーザーですか？</span> <a href="#" id="signupLink">サインアップ</a>
+      </div>
+    </div>
+
+    <div id="signupForm" style="display: none;">
+      <h2 class="text-center">SignUp(サインアップ)</h2>
+      <form>
+        <div class="form-group">
+          <label for="newEmail">Email(メールアドレス)：</label>
+          <input type="text" id="newEmail" name="newEmail" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="newPassword">Password(パスワード)：</label>
+          <input type="password" id="newPassword" name="newPassword" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">サインアップ</button>
+      </form>
+      <div class="text-center mt-3">
+        <span>既存のアカウントですか？</span> <a href="#" id="signinLink">サインイン</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simulated user credentials
+    const users = [
+      { email: 'example@example.com', password: 'password' },
+      // Add more users as needed
+    ];
+
+    // Show sign-in form and hide sign-up form initially
+    document.getElementById('signinForm').style.display = 'block';
+    document.getElementById('signupForm').style.display = 'none';
+
+    // Switch to sign-up form when sign-up link is clicked
+    document.getElementById('signupLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('signinForm').style.display = 'none';
+      document.getElementById('signupForm').style.display = 'block';
+    });
+
+    // Switch to sign-in form when sign-in link is clicked
+    document.getElementById('signinLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('signupForm').style.display = 'none';
+      document.getElementById('signinForm').style.display = 'block';
+    });
+
+    // Simulated authentication for sign-in
+    document.querySelector('#signinForm form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      // Check if the entered credentials match any user
+      var authenticatedUser = users.find(function(user) {
+        return user.email === email && user.password === password;
+      });
+
+      if (authenticatedUser !== undefined) { // Check if user is found
+        // If authenticated, redirect to home page
+        alert('Authentication successful. Redirecting to home page.');
+        window.location.href = 'home.html'; // Redirect to home page
+      } else {
+        alert('Authentication failed. Please check your email and password.');
+      }
+    });
+
+    // Simulated sign-up
+    document.querySelector('#signupForm form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var newEmail = document.getElementById('newEmail').value;
+      var newPassword = document.getElementById('newPassword').value;
+
+      // Check if the new user already exists
+      var existingUser = users.find(function(user) {
+        return user.email === newEmail;
+      });
+
+      if (existingUser) {
+        alert('Account already exists. Please sign in with your existing account.');
+      } else {
+        // Add the new user to the list of users (for demonstration purposes only)
+        users.push({ email: newEmail, password: newPassword });
+
+        alert('Account created successfully. Please sign in with your new account.');
+        document.getElementById('signupForm').style.display = 'none';
+        document.getElementById('signinForm').style.display = 'block';
+      }
+    });
+
+    // Stop card dancing animation when input field is focused
+    document.querySelectorAll('.form-control').forEach(input => {
+      input.addEventListener('focus', () => {
+        document.querySelector('.signin-card').style.animation = 'none';
+      });
+      input.addEventListener('blur', () => {
+        document.querySelector('.signin-card').style.animation = 'dance 1s infinite alternate';
+      });
+    });
+  </script>
+</body>
+</html>

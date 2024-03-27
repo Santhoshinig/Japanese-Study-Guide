@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigonho Learning</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="home.css">
+  <style>
+    /* Additional custom CSS styles can be added here */
+    .card {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="logo-black.png" alt="" class="japflag">
+  <a class="navbar-brand" href="#" id="banner">Nihongo Learning</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#levels"><i class="fas fa-layer-group"></i> Levels</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="signin.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+      </li>
+      
+  </div>
+</nav>
+
+<!-- Full Width Image -->
+<div class="container-fluid p-0">
+  <img src="newheader1.jpeg" alt="Full Width Image" class="full-width-image">
+</div>
+
+<div class="container" >
+  <div class="marquee-container">
+    <img src="many_people-removebg-preview.png" alt="" class="people">
+    <div class="marquee-text">   
+        <h2 class="question-title">WHAT IS JLPT?</h2>
+        <p class="question-text">The Japanese Language Proficiency Test (JLPT) is a standardized test designed to gauge reading comprehension and listening skills in Japanese. It has five difficulty levels (N5 to N1).</p>
+    
+     
+        <h3 class="question-title">WHO DEVISED JLPT?</h3>
+        <p class="question-text">The JLPT was devised by the Japan Foundation and Japan Educational Exchanges and Services in 1984.</p>
+  
+
+        <h4 class="question-title">HOW CAN I TAKE IT?</h4>
+        <p class="question-text">The JLPT is offered twice a year in Japan (July and December) and once or twice a year overseas. It's not available online; you have to take it on paper at a testing site.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Content column -->
+      <div class="col-md-6 duocon">
+        <h3 style="color: chocolate;">LEARN WITH DUOLINGO</h3>
+        <p>Improve your Japanese language skills with Duolingo, a leading language-learning platform. With Duolingo, you can embark on an interactive journey to master Japanese, covering reading, writing, listening, and speaking. Whether you're a beginner or advanced learner, Duolingo offers personalized lessons tailored to your proficiency level. Practice daily with fun exercises, quizzes, and challenges to reinforce your understanding and fluency in Japanese. Join millions of users worldwide and start your language-learning adventure today!</p>
+      </div>
+      <!-- Image column -->
+      <div class="col-md-6">
+        <img src="ddd.jpg" class="img-fluid mx-auto d-block" alt="Duolingo Logo" style=" width: 400px;
+        height: 350px;
+        border-radius: 50%;
+         padding-top: 20px;
+         animation: dance 1s infinite alternate;">
+      </div>
+    </div>
+  </div>
+  
+
+<!-- JLPT Levels Section -->
+<div id="levels" class="container-fluid lev">
+  <h2 class="text-center mt-4 mb-5">JLPT Levels</h2>
+  
+  <div class="row">
+    <!-- Image column -->
+    <div class="col-md-6">
+      <div class="imaa">
+        <img src="happybros-removebg-preview (1).png" class="img-fluid mx-auto d-block" alt="Image beside levels">
+      </div>
+    </div>
+  
+    <!-- Levels column -->
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Level N5</h5>
+              <button class="btn btn-custom btn-block animated-btn" onclick="navigateToLevel('lev1.html')">Explore Level</button>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other levels -->
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Level N4</h5>
+              <button class="btn btn-custom btn-block animated-btn" onclick="navigateToLevel('lev2.html')">Explore Level</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Level N3</h5>
+              <button class="btn btn-custom btn-block animated-btn" onclick="navigateToLevel('lev3.html')">Explore Level</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Level N2</h5>
+              <button class="btn btn-custom btn-block animated-btn" onclick="navigateToLevel('lev4.html')">Explore Level</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Level N1</h5>
+              <button class="btn btn-custom btn-block animated-btn" onclick="navigateToLevel('lev5.html')">Explore Level</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="about" class="container-fluid carddet">
+  <h2 class="text-center mt-4 mb-5">About Us</h2>
+  <div class="row">
+    <div class="col-md-6 listee">
+      <h3 style="color: chocolate;">OUR MISSION</h3>
+      <p >Nihongo Learning is dedicated to providing high-quality Japanese language education to learners worldwide. Our mission is to facilitate effective language acquisition through comprehensive courses, interactive resources, and personalized learning experiences.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="card contact-card">
+        <div class="card-body">
+          <h3 class="card-title">Contact Us</h3>
+          <p class="card-text dett">If you have any questions or inquiries, please feel free to contact us:</p>
+          <ul class="list-unstyled dett">
+            <li><strong>Email:</strong> santhoshinigopalakrishnan11@gmail.com</li>
+            <li><strong>Phone:</strong> +91 9025724030</li>
+            <li><strong>Address:</strong> 6B,BazzarStreet,Idappadi.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="foot">
+
+  <p>&copy; 2024 NihongoLearning.All rights reserved. </p>
+</footer>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function navigateToLevel(level) {
+    window.location.href = level;
+  }
+
+  // Smooth scrolling for anchor links
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+
+  // Fade in cards and table
+  $(document).ready(function(){
+    $(".card").each(function(index) {
+      $(this).delay(500 * index).fadeIn(1000);
+    });
+    $(".table-responsive").delay(500 * $(".card").length).fadeIn(1000);
+  });
+</script>
+
+</body>
+</html>

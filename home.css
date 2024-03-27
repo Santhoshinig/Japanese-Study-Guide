@@ -1,0 +1,230 @@
+body {
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  font-family: Arial, sans-serif;
+  /* Light gray background */
+}
+
+    .navbar-dark .navbar-nav .nav-link {
+      color:white; 
+    }
+    
+    .navbar-nav .nav-link {
+      margin-right: 20px;
+    }
+
+
+    .japflag {
+      margin-right: 15px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+    #banner {
+      margin-right: 15px;
+      font-size: 30px;
+      font-weight: 25px;
+    }
+    .full-width-image {
+        width: 100%;
+        object-fit: cover;
+        height: 350px;
+        animation-name: slideout;
+      animation-duration: 1s;
+      animation: pulse 2s infinite alternate;
+    }
+    
+      @keyframes slideout {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .card {
+        background-color: bisque; /* Change card background color */
+        width: 250px; /* Reduce card width */
+        margin: 10px auto; /* Center align card */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        transition: transform 0.3s ease; /* Add transform animation */
+      }
+  
+      .card:hover {
+        transform: scale(1.05); /* Enlarge card on hover */
+      }
+  
+      .card-body {
+        text-align: center; /* Center align text */
+      }
+  
+      .card-title {
+        font-size: 24px; /* Increase title font size */
+        margin-bottom: 10px; /* Add margin below title */
+      }
+  
+      .btn-custom {
+        background-color:cadetblue; /* Change button background color */
+        color: #ffffff; /* Change button text color */
+      }
+  
+      .btn-custom:hover {
+        background-color: #0056b3; /* Change button background color on hover */
+      }
+      #level{
+        color:white ;
+      }
+      .card {
+        background-color: #f8f9fa; /* Change card background color */
+        width: 250px; /* Card width */
+        margin: 10px auto; /* Center align card */
+        border-radius: 10px; /* Add border radius */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        transition: transform 0.3s ease; /* Add transform animation */
+      }
+  
+      .card:hover {
+        transform: scale(1.05); /* Enlarge card on hover */
+      }
+  
+      .card-body {
+        text-align: center; /* Center align text */
+      }
+  
+      .card-title {
+        font-size: 24px; /* Title font size */
+        margin-bottom: 10px; /* Add margin below title */
+      }
+      .people {
+        width: 400px;
+        height: 350px;
+        margin-left: 0px;
+      
+        padding-top: 20px;
+        margin-right: 20px;
+      }
+      .marquee-container {
+        display: flex;
+        align-items: center;
+        color: #f8f9fa;
+        margin-bottom: 20px;
+      
+      }
+     
+     
+      
+      .marquee-text {
+        flex-grow: 1;
+      
+        font-family:sans-serif;
+        padding-top: 20px; /* Take remaining space */
+      }
+      
+      .question-title {
+        font-size: 25px;
+        color:darkgoldenrod;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      } /* Blue color */
+    
+      
+      .question-text {
+        font-size: 18px;
+      }
+      
+.contact-card {
+  background-color:white;
+  color: black;
+}
+
+.contact-card .card-body {
+  padding: 20px;
+}
+
+.contact-card .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-card .card-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-card ul {
+  padding-left: 0;
+}
+
+.contact-card ul li {
+  margin-bottom: 10px;
+}
+
+.contact-card ul li strong {
+  font-weight: bold;
+}
+.carddet{
+  color: white;
+}
+/* Custom CSS */
+.padded-left {
+  padding-left: 30px;
+}
+
+.contact-card {
+  margin-top: 20px;
+}
+.lev{
+  color: #ffffff;
+}
+.imaa{
+  width:750px;
+  height:90px;
+  padding-top: 180px;
+  
+}
+.card-title{
+  color:chocolate;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listee h3{
+  color: chocolate;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.listee{
+  color: white;
+  font-size: 18px;
+  padding-left: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#duolingo{
+  width: 20px;
+  height: 15px;
+}
+.duocon h3{
+  padding-left: 50px;
+  color: chocolate;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
+}
+.duocon p{
+  color: white;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+@keyframes dance {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.foot{
+  color: white;
+   text-align: center;
+   font-size: 15px;
+}
